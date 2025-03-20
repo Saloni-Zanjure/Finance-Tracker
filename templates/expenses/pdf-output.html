@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>PDF OUTPUT {% block title %} {% endblock %}</title>
+
+        <style>
+            @page {
+                size: A4;
+                margin: 2.5cm 1.5cm 3.5cm 1.5cm;
+                @top-center {
+                    content: GROW;
+                }
+            }
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+            }
+            img {
+                margin-left: 40%;
+            }
+
+        </style>
+        </head>
+        <body>
+            <img src="{% static 'images/logo.png'%}" alt="logo" width="100" height="100" />
+        </body>
+        </html>

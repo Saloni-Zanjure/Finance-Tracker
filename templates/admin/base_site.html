@@ -1,0 +1,21 @@
+{% extends 'admin/base.html' %} {% load static %}
+
+{% comment %} to make the djnago admin site look like the rest of the site, we need to create a new template that extends the base_site.html template from the admin app. This template will be used to override the default admin site template. The new template will be located in the Financetracker/templates/admin directory and will be named base_site.html. The new template will extend the base.html template from the Financetracker app and will override the branding and content blocks. The new template will look like this: {% endcomment %}
+
+{% block branding %}
+<h1 id-"head">
+    <img src="{% static 'images/logo.png' %}" width="50" height="50" alt="Grow Logo" />
+    Grow
+</h1>
+
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/adminstyle.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
